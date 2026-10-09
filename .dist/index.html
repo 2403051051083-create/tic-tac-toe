@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <p class="eyebrow">Neon arena · player versus player</p>
+        <h1>Advanced <span>Tic Tac Toe</span></h1>
+        <p class="subtitle">Make your move. Own the grid.</p>
+      </header>
+
+      <section class="status-panel" aria-label="Game status">
+        <div class="turn-card">
+          <span class="label">Current turn</span>
+          <strong id="turn-indicator">Player X</strong>
+        </div>
+
+        <div class="scoreboard" aria-label="Score board">
+          <div class="score-card x-card">
+            <span>Player X</span>
+            <strong id="x-score">0</strong>
+          </div>
+          <div class="score-card draw-card">
+            <span>Draws</span>
+            <strong id="draw-score">0</strong>
+          </div>
+          <div class="score-card o-card">
+            <span>Player O</span>
+            <strong id="o-score">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="msg-container hide" aria-live="polite">
+        <div class="msg-box">
+          <p id="msg">Winner</p>
+          <button id="new-button">Next Round</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="game" aria-label="Tic tac toe board">
+          <button class="box" data-index="0" aria-label="Cell 1"></button>
+          <button class="box" data-index="1" aria-label="Cell 2"></button>
+          <button class="box" data-index="2" aria-label="Cell 3"></button>
+          <button class="box" data-index="3" aria-label="Cell 4"></button>
+          <button class="box" data-index="4" aria-label="Cell 5"></button>
+          <button class="box" data-index="5" aria-label="Cell 6"></button>
+          <button class="box" data-index="6" aria-label="Cell 7"></button>
+          <button class="box" data-index="7" aria-label="Cell 8"></button>
+          <button class="box" data-index="8" aria-label="Cell 9"></button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="reset-button" class="primary-btn">Reset Board</button>
+        <button id="reset-score-button" class="secondary-btn">Reset Scores</button>
+      </div>
+    </main>
+
+    <script src="Scripts.js"></script>
+  </body>
+</html>
